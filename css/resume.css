@@ -1,0 +1,102 @@
+.resume-body {
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: auto;
+}
+
+.intro {
+    grid-column: 1;
+    grid-row: 1;
+    border: 2px #673ab7 solid;
+    padding: 2rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.myname {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.address-link:hover {
+    text-decoration: underline;
+}
+
+.address {
+    color: #673ab7;
+}
+
+.resume-photo {
+    border: 1px solid #673ab7;
+    border-radius: 50%;
+}
+
+.right-sider {
+    grid-column: 1;
+    grid-row: 2/3;
+    border: 2px solid #673ab7;
+    padding: 2rem;
+    margin: 2rem;
+}
+
+.left-sider {
+    grid-column: 1;
+    grid-row: 3/4;
+    border: 2px solid #673ab7;
+    padding: 2rem;
+    margin: 2rem;
+}
+
+@media screen and (min-width:600px) {
+    .intro {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .resume-body {
+        display: grid;
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: auto auto;
+    }
+    .intro {
+        grid-column: 1/span 2;
+        grid-row: 1;
+        margin-right: 15%;
+        margin-left: 15%;
+        justify-content: space-between;
+    }
+    .left-sider {
+        grid-column: 1;
+        grid-row: 2/4;
+        border: 2px solid #673ab7;
+        padding: 2rem;
+        margin: 2rem;
+        margin-left: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .right-sider {
+        grid-column: 2;
+        grid-row: 2/4;
+        border: 2px solid #673ab7;
+        padding: 2rem;
+        margin: 2rem;
+        margin-right: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
