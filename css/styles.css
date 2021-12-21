@@ -2,7 +2,9 @@ body {
     background-color: #cfcfcf;
     display: flex;
     flex-direction: column;
-    height: 100%;
+    min-height: 100vh;
+    padding-bottom: auto;
+    position: relative;
 }
 
 .active {
@@ -166,16 +168,18 @@ a {
     height: auto;
     justify-content: center;
     align-content: center;
+    bottom: 0;
+    position: absolute;
 }
 
-.social-media {
+.footer__social-media {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     gap: 1rem;
 }
 
-.social-media-button {
+.footer__social-media--button {
     background-color: #9e9e9e;
     border: #9e9e9e;
     border-radius: 55%;
@@ -185,6 +189,7 @@ a {
 .copy {
     display: block;
     color: white;
+    font-size: smaller;
 }
 
 @media only screen and (max-width: 600px) {
