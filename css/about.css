@@ -1,13 +1,8 @@
-.nav-bar {
-    width: 320px;
-}
-
 .container {
     display: grid;
     grid-template-rows: auto auto auto auto auto;
     grid-template-columns: auto;
-    height: 100%;
-    width: 320px;
+    min-width: 100vh;
     border: 1px white solid;
 }
 
