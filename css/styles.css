@@ -236,7 +236,6 @@ a {
         background-color: none;
         border: white 1px solid;
         border-radius: 5px;
-        font-size: larger;
     }
     .list a :hover {
         background-color: white;
@@ -333,6 +332,13 @@ a {
         background-color: #673ab7;
         height: auto;
         justify-content: space-between;
+    }
+    .nav-link {
+        color: white;
+        text-decoration: none;
+        background-color: none;
+        border: white 1px solid;
+        border-radius: 5px;
     }
     .nav-link:hover {
         text-decoration: underline;
