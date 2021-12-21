@@ -95,7 +95,7 @@ a {
     background-color: #e4daf5;
 }
 
-.dropdown:hover .nav-bar__dropdown-content {
+.nav-bar__dropdown:hover .nav-bar__dropdown-content {
     display: block;
     width: fit-content;
     background-color: #f7f4fd;
