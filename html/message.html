@@ -21,7 +21,7 @@
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
-            justify-content: center;
+            align-content: center;
             align-items: center;
             gap: 1rem;
             padding-top: 2rem;
@@ -45,7 +45,7 @@
         .messaging--text-area {
             box-sizing: border-box;
             width: 100%;
-            height: 4rem;
+            height: 10rem;
         }
         
         .messaging__submit:hover {
@@ -94,15 +94,15 @@
 
         <form action="message.html " class="messaging__forms">
             <div>
-                <label for="fname">Full name: </label>
+                <label for="fname">Your Name: </label>
                 <input class="messaging--input" type="text" id="fname" name="firstname" placeholder="Your name..">
             </div>
             <div>
-                <label for="email">Your email: </label>
+                <label for="email"> Add Email:</label>
                 <input class="messaging--input" type="email" id="email" name="email" placeholder="Your email..">
             </div>
             <div>
-                <label for="phone">Phone no: </label>
+                <label for="phone">Add Phone: </label>
                 <input class="messaging--input" type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="Your phone..">
 
             </div>
