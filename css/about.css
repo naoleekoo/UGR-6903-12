@@ -56,14 +56,19 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
-.resume-btn {
-    background-color: #9e9e9e;
-    border: #9e9e9e 1px solid;
-    border-radius: 15px;
+.gallery-link {
+    text-decoration: none;
+    color: black;
     font-size: larger;
 }
 
-.resume-btn:hover {
+.gallery-btn {
+    background-color: #9e9e9e;
+    border: #9e9e9e 1px solid;
+    border-radius: 15px;
+}
+
+.gallery-btn:hover {
     background-color: azure;
 }
 

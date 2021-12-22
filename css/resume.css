@@ -7,6 +7,8 @@
 .intro {
     grid-column: 1;
     grid-row: 1;
+    background-color: aliceblue;
+    box-shadow: 5px 5px;
     border: 2px #673ab7 solid;
     padding: 2rem;
     margin-right: 2rem;
@@ -20,9 +22,10 @@
 
 .myname {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     gap: 2rem;
 }
 
@@ -39,20 +42,27 @@
     border-radius: 50%;
 }
 
-.right-sider {
+.left-sider {
     grid-column: 1;
     grid-row: 2/3;
     border: 2px solid #673ab7;
     padding: 2rem;
     margin: 2rem;
+    box-shadow: 5px 5px;
 }
 
-.left-sider {
+.right-sider {
     grid-column: 1;
     grid-row: 3/4;
     border: 2px solid #673ab7;
     padding: 2rem;
     margin: 2rem;
+    box-shadow: 5px 5px;
+}
+
+.address-link {
+    text-decoration: none;
+    color: black;
 }
 
 @media screen and (min-width:600px) {
@@ -77,6 +87,14 @@
         margin-left: 15%;
         justify-content: space-between;
     }
+    .myname {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 2rem;
+    }
     .left-sider {
         grid-column: 1;
         grid-row: 2/4;
@@ -86,7 +104,7 @@
         margin-left: 25%;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: center;
     }
     .right-sider {
         grid-column: 2;
@@ -97,6 +115,6 @@
         margin-right: 25%;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: flex-start;
     }
 }
