@@ -43,8 +43,9 @@
         }
         
         .messaging--text-area {
-            width: 15rem;
             box-sizing: border-box;
+            width: 100%;
+            height: 4rem;
         }
         
         .messaging__submit:hover {
@@ -102,7 +103,7 @@
             </div>
             <div>
                 <label for="phone">Phone no: </label>
-                <input class="messaging--input" type="tel" id="phone" name="phone" pattern="[0-9]{10}]" placeholder="Your phone..">
+                <input class="messaging--input" type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="Your phone..">
 
             </div>
             <div>
@@ -111,9 +112,9 @@
             </div>
             <div>
                 <label for="message" style="display: none;">message</label>
-                <textarea type="text-area" name="comment" id="message" cols="30" rows="10" class="messaging--text-area">Write your messages here</textarea>
+                <textarea type="text-area" name="comment" id="message" cols="40" rows="10" class="messaging--text-area">Write your messages here</textarea>
             </div>
-            <input class="messaging--input" type="submit" value="Send" class="messaging__submit">
+            <input class="messaging--input messaging__submit" type="submit" value="Send">
 
         </form>
 
