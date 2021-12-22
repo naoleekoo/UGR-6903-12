@@ -257,6 +257,19 @@ body {
         border-radius: 5px;
         list-style: none;
     }
+    .nav-bar--link {
+        color: white;
+        text-decoration: none;
+        background-color: none;
+        border: white 1px solid;
+        border-radius: 5px;
+    }
+    .nav-bar--link:hover {
+        text-decoration: underline;
+    }
+    .body__desc {
+        font-size: 30px;
+    }
     .body__desc {
         font-size: 50px;
         font-weight: 500;
