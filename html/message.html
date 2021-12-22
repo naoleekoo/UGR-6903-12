@@ -12,43 +12,42 @@
 
     <style>
         .messaging {
-            padding: 3rem;
-            margin: 3rem;
             text-align: center;
+            min-width: 100%;
         }
         
-        .forms {
+        .messaging__forms {
             font-size: larger;
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
+            justify-content: center;
             align-items: center;
-            text-align: center;
             gap: 1rem;
+            padding-top: 2rem;
+            margin: 2rem;
         }
         
-        input {
+        .messaging--input {
             width: fit-content;
             padding: 12px 20px;
             margin: 8px 0;
             box-sizing: border-box;
         }
         
-        .submit {
+        .messaging__submit {
             background-color: blue;
             color: white;
             font-size: larger;
             border: 0px;
         }
         
-        .text-area {
-            width: 20rem;
-            padding: 12px 20px;
-            margin: 8px 0;
+        .messaging--text-area {
+            width: 15rem;
             box-sizing: border-box;
         }
         
-        .submit:hover {
+        .messaging__submit:hover {
             background-color: rgb(17, 169, 230);
             text-decoration: underline;
         }
@@ -90,22 +89,34 @@
         </div>
 
     </nav>
-    <section class="messaging">
-        <form action="message.html" class="forms">
-            <span> <label for="fname">Full name: </label>
-                <input type="text" id="fname" name="firstname" placeholder="Your name..">
-               </span>
-            <span><label for="email">Your email: </label>
-    <input type="email" id="email" name="email" placeholder="Your email..">
-    </span>
-            <span>
-        <label for="phone">Phone no: </label>
-        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}]" placeholder="Your phone..">
-        
-    </span>
-            <textarea name="comment" id="message" cols="30" rows="10" class="text-area">Write your messages here</textarea>
-            <input type="submit" value="Send" class="submit">
+    <section class="messaging ">
+
+        <form action="message.html " class="messaging__forms">
+            <div>
+                <label for="fname">Full name: </label>
+                <input class="messaging--input" type="text" id="fname" name="firstname" placeholder="Your name..">
+            </div>
+            <div>
+                <label for="email">Your email: </label>
+                <input class="messaging--input" type="email" id="email" name="email" placeholder="Your email..">
+            </div>
+            <div>
+                <label for="phone">Phone no: </label>
+                <input class="messaging--input" type="tel" id="phone" name="phone" pattern="[0-9]{10}]" placeholder="Your phone..">
+
+            </div>
+            <div>
+                <input type="checkbox" id="checkbox" name="checkbox" title="agree" value="agree">
+                <label for="checkbox">I agree to terms and conditions</label>
+            </div>
+            <div>
+                <label for="message" style="display: none;">message</label>
+                <textarea type="text-area" name="comment" id="message" cols="30" rows="10" class="messaging--text-area">Write your messages here</textarea>
+            </div>
+            <input class="messaging--input" type="submit" value="Send" class="messaging__submit">
+
         </form>
+
     </section>
 
     <footer>
