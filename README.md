@@ -1,3 +1,5 @@
-# UGR-6903-12
-I am Naol Kecha this is my portfolio website
+# Personal Portfolio and Profile page
+Name: Naol Kecha 
+ID: UGR/6903/12
+
 
